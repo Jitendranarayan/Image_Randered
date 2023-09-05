@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{%block body%}
+
+            <div class="img-zoom-container">
+                <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <img id="myimage" src="{{result}}">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div id="myresult" class="img-zoom-result" ></div>
+                </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    
+<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous">
+</script>
+
+
+<script>
+    // Initiate zoom effect:
+    imageZoom("myimage", "myresult");
+    $("#myimage").mouseout(function(){
+        $('#myresult').css("visibility", "hidden");
+
+        $('#myresult').show();
+    });
+
+    $("#myimage").mouseleave(function(){
+        $('#myresult').css("visibility", "hidden");
+
+        $('#myresult').show();
+    });
+    
+</script>
+{%endblock%}

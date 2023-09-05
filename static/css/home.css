@@ -1,0 +1,109 @@
+body{
+    overflow-x: hidden;
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height:25vh;
+    width:100vw;
+    
+}
+
+section{
+    background: #EEF2F7;
+    
+}
+
+.main_Content_Outer{
+    position:absolute;
+    top:14%;
+    left:25px;
+    right:25px;
+    width:80%;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+    ;    
+    height:80vh;
+    margin:0 auto;
+    background: white;
+    border-radius: 5px;
+   
+
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:15px;
+    text-align: center;
+    margin-top:2%;
+    z-index:8;
+    
+}
+
+.innner_Content{
+
+    padding:5%;
+
+}
+
+
+.innner_Content h4{
+
+    color:grey;
+    font-weight: 400;
+
+}
+
+
+footer a{
+    
+    color:#fff;
+    font-weight: bold;
+    
+}
+
+#imagePlacedID{
+
+    max-width:80%;
+    height:48vh;
+    margin:0 auto;
+
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  #upload_Image{
+
+    padding:8px 16px;
+    background:grey;
+    color:#fff;
+    border:none;
+    display: none;
+  }
+
+
+  #GoogleSignIn{
+      text-align: center;
+      padding:8px 16px;
+      border:2px solid red;
+
+  }
